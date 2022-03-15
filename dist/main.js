@@ -1,0 +1,1 @@
+(()=>{"use strict";let t=document.getElementById("city");document.getElementById("submit-btn").addEventListener("click",(t=>e(t)));const e=e=>{console.log(t.value),e.preventDefault()};!async function(){const t=await fetch("http://api.weatherapi.com/v1/current.json?key=d0a1fcd9a4b6423b92752725212711&q=London&aqi=no",{mode:"cors"}),e=await t.json();console.log(e)}()})();
