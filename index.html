@@ -4,20 +4,67 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shanti&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>My Weather App</title>
   </head>
-  <form action="" class="form-container" onsubmit="submit()">
-    <input
-      type="text"
-      id="city"
-      placeholder="Search for a city"
-      autocomplete="off"
-    />
-    <button class="submit-btn" id="submit-btn">Submit</button>
-  </form>
-  <div id="weather">hi</div>
-  <img src="" alt="" id="icon" />
   <body>
+    <form action="" class="form-container" onsubmit="submit()">
+      <input
+        type="text"
+        id="city"
+        placeholder="Search for a city"
+        autocomplete="off"
+      />
+      <button class="submit-btn" id="submit-btn">Submit</button>
+    </form>
+    <div class="current-container">
+      <div class="section-1">
+        <h1>Toronto</h1>
+        <h2>Canada</h2>
+      </div>
+      <div class="section-2">
+        <div class="day">
+          <h3>Tuesday</h3>
+          <h4>March 15</h4>
+        </div>
+        <div class="temp">
+          <h1>3&deg;C</h1>
+          <p>|</p>
+          <h1>12&deg;F</h2>
+        </div>
+      </div>
+      <div class="section-3">
+        <h2>Moderate Rain</h2>
+        <div class="details-container">
+          <div class="details-1 details">
+            <p>img here</p>
+            <div class="specifics">
+              <h4>Humidity</h4>
+              <h2>45 %</h2>
+            </div>
+          </div>
+          <div class="details-2 details">
+            <p>img here</p>
+            <div class="specifics">
+              <h4>Chance of Rain</h4>
+              <h2>2 %</h2>
+            </div>
+          </div>
+          <div class="details-3 details">
+            <p>img here</p>
+            <div class="specifics">
+              <h4>Wind Speed</h4>
+              <h2>2 km/h</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="" alt="" id="icon" />
     <div id="content"></div>
     <script src="main.js"></script>
   </body>
