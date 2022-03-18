@@ -15,7 +15,7 @@
     <form action="" class="form-container" onsubmit="submit()">
       <input
         type="text"
-        id="city"
+        id="input-city"
         placeholder="Search for a city"
         autocomplete="off"
       />
@@ -25,49 +25,127 @@
     </form>
     <div class="current-container">
       <div class="section-1">
-        <h1>Toronto</h1>
-        <h2>Canada</h2>
+        <h1 id="city"c>Toronto</h1>
+        <h2 id="country">Canada</h2>
       </div>
       <div class="section-2">
         <div class="day">
-          <h3>Tuesday</h3>
-          <h4>March 15</h4>
+          <h3 id="day0">Tuesday</h3>
+          <h4 id="date0">March 15</h4>
         </div>
         <div class="temp">
-          <h1>3&deg;C</h1>
+          <h1 id="day0-temp-c">3.3 &deg;C</h1>
           <p>|</p>
-          <h1>12&deg;F</h2>
+          <h1 id="day0-temp-f">24.6 &deg;F</h2>
         </div>
       </div>
       <div class="section-3">
-        <h2>Moderate Rain</h2>
+        <h2 id="day0-condition">Clear</h2>
         <div class="details-container">
           <div class="details-1 details">
             <img src="/dist/images/humidity.png" alt="">
             <div class="specifics">
               <h4>Humidity</h4>
-              <h2>45 %</h2>
+              <h2 id="day0-humidity">45 %</h2>
             </div>
           </div>
           <div class="details-2 details">
             <img src="/dist/images/rain.png" alt="">
             <div class="specifics">
-              <h4>Chance of Rain</h4>
-              <h2>2 %</h2>
+              <h4>Precipitation</h4>
+              <h2 id="day0-rain">2 mm</h2>
             </div>
           </div>
           <div class="details-3 details">
             <img src="/dist/images/wind.png" alt="">
             <div class="specifics">
               <h4>Wind Speed</h4>
-              <h2>2 km/h</h2>
+              <h2 id="day0-wind">2 km/h</h2>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <img src="" alt="" id="icon" />
-    <div id="content"></div>
+    <div class="forecast">
+      <div class="day-forecast day-1">
+        <div class="top">
+          <div class="day day-card">
+            <h3 id="day1">Tuesday</h3>
+            <h4 id="date1">March 15</h4>
+          </div>
+          <div class="temp">
+            <h1 id="day1-temp-c">3 &deg;C</h1>
+            <p>|</p>
+            <h1 id="day1-temp-f">12 &deg;F</h2>
+          </div>
+        </div>
+        <div class="bottom">
+          <h2 id="day1-condition">Moderate Rain</h2>
+          <div class="forecast-details-container">
+          <div class="forecast-details">
+            <img src="/dist/images/humidity.png" alt="">
+            <div class="specifics">
+              <h5>Humidity</h4>
+              <h3 id="day1-humidity">45 %</h4>
+            </div>
+          </div>
+          <div class="forecast-details">
+            <img src="/dist/images/rain.png" alt="">
+            <div class="specifics">
+              <h5>Precipitation</h4>
+              <h3 id="day1-rain">6 mm</h2>
+            </div>
+          </div>
+          <div class="forecast-details">
+            <img src="/dist/images/wind.png" alt="">
+            <div class="specifics">
+              <h5>Wind Speed</h5>
+              <h3 id="day1-wind">2 km/h</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="day-forecast day-2">
+        <div class="top">
+          <div class="day day-card">
+          <h3 id="day2">Thursday</h3>
+          <h4 id="date2">March 17</h4>
+        </div>
+        <div class="temp">
+          <h1 id="day2-temp-c">5 &deg;C</h1>
+          <p>|</p>
+          <h1 id="day2-temp-f">17 &deg;F</h2>
+        </div>
+        </div>
+        <div class="bottom">
+          <h2 id="day2-condition">Moderate Rain</h2>
+          <div class="forecast-details-container">
+          <div class="forecast-details">
+            <img src="/dist/images/humidity.png" alt="">
+            <div class="specifics">
+              <h5>Humidity</h4>
+              <h3 id="day2-humidity">12 %</h2>
+            </div>
+          </div>
+          <div class="forecast-details">
+            <img src="/dist/images/rain.png" alt="">
+            <div class="specifics">
+              <h5>Precipitation</h5>
+              <h3 id="day2-rain">12 mm</h2>
+            </div>
+          </div>
+          <div class="forecast-details">
+            <img src="/dist/images/wind.png" alt="">
+            <div class="specifics">
+              <h5>Wind Speed</h5>
+              <h3 id="day2-wind">7 km/h</h2>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>

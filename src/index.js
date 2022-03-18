@@ -1,23 +1,28 @@
 import { weatherRequest } from "./weather.js";
+import { renderNewCity } from "./UI.js";
 
-let inputCity = document.getElementById("city");
+let weatherData = {};
+
+let inputCity = document.getElementById("input-city");
 let submitButton = document.getElementById("submit-btn");
-let div = document.getElementById("weather");
-let img = document.getElementById("icon");
-
 submitButton.addEventListener("click", (e) => searchCity(e));
+inputCity.addEventListener("keyup", (e) => searchCity(e));
 
 const searchCity = (e) => {
-  e.preventDefault();
-  getWeather(inputCity.value);
+  if (e.keyCode === 13 || e.type === "click") {
+    e.preventDefault();
+    getWeather(inputCity.value);
+  }
 };
 
 const getWeather = async (city) => {
   try {
     const response = await weatherRequest(city);
-    div.textContent = response.current.condition.icon;
-    img.src = response.current.condition.icon;
-    console.table(response);
+    // console.log(response);
+    weatherData = response;
+    // console.log("weather Data:");
+    console.log(weatherData);
+    renderNewCity(weatherData);
   } catch (err) {
     console.log(err);
   }
