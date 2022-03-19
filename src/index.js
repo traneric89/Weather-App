@@ -22,6 +22,7 @@ const getWeather = async (city) => {
     weatherData = response;
     // console.log("weather Data:");
     console.log(weatherData);
+    console.log("hello");
     renderNewCity(weatherData);
   } catch (err) {
     console.log(err);
